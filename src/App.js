@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Main from "./components/Main";
 import NavBar from "./layouts/NavBar";
 import Footer from "./layouts/Footer";
 import Home from "./pages/Home";
@@ -32,6 +33,7 @@ function App() {
           element={<BookingConfirmation {...formProps} />}
         />
       </Routes>
+      <Main />
       <Footer />
     </BrowserRouter>
   );
