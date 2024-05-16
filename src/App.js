@@ -1,42 +1,47 @@
-import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Main from "./components/Main";
-import NavBar from "./layouts/NavBar";
-import Footer from "./layouts/Footer";
-import Home from "./pages/Home";
-import Booking from "./pages/Booking";
-import BookingConfirmation from "./pages/BookingConfirmation";
-import { useFormContext } from "./store/FormContext";
-import "./App.css";
+import {
+  Route, 
+  Routes
+} from 'react-router-dom';
+import pages from './utils/pages';
+import Layout from './components/layout/Layout';
+import Home from './components/pages/Home';
+import Bookings from './components/pages/Bookings';
+import ConfirmedBooking from './components/pages/Bookings/ConfirmedBooking';
+import NotFound from './components/pages/NotFound';
+import UnderConstruction from './components/pages/UnderConstruction';
 
-function App() {
-  const { form } = useFormContext();
-
-  const formProps = {
-    name: form.name,
-    date: form.date,
-    time: form.time,
-    guests: form.numberOfGuests,
-    occasion: form.occasion,
-    table: form.tablePreference,
-    request: form.message,
-  };
-
+const App = () => {
   return (
-    <BrowserRouter>
-      <NavBar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/booking" element={<Booking />} />
-        <Route
-          path="/booking-confirmation"
-          element={<BookingConfirmation {...formProps} />}
-        />
-      </Routes>
-      <Main />
-      <Footer />
-    </BrowserRouter>
+    <>
+      <Layout>
+        <Routes>
+          <Route path={pages.get('home').path} element={<Home />} />
+          <Route 
+            path={pages.get('about').path} 
+            element={<UnderConstruction />} 
+          />
+          <Route 
+            path={pages.get('menu').path} 
+            element={<UnderConstruction />} 
+          />
+          <Route path={pages.get('bookings').path} element={<Bookings />} />
+          <Route 
+            path={pages.get('confirmedBooking').path} 
+            element={<ConfirmedBooking />} 
+          />
+          <Route 
+            path={pages.get('orderOnline').path} 
+            element={<UnderConstruction />} 
+          />
+          <Route 
+            path={pages.get('login').path} 
+            element={<UnderConstruction />} 
+          />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </Layout>
+    </>
   );
-}
+};
 
 export default App;
