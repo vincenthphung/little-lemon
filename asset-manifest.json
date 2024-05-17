@@ -1,18 +1,25 @@
 {
   "files": {
-    "main.css": "/little-lemon/static/css/main.8c611e5d.css",
-    "main.js": "/little-lemon/static/js/main.1f328cec.js",
-    "static/media/Bruchetta.svg": "/little-lemon/static/media/Bruchetta.29ea078fea3d3120ed22402e901b5bbc.svg",
-    "static/media/Salad.jpg": "/little-lemon/static/media/Salad.bed423a1fab5b210e347.jpg",
-    "static/media/Food.jpg": "/little-lemon/static/media/Food.e8abf5b772b6817189aa.jpg",
-    "static/media/Restaurant.jpg": "/little-lemon/static/media/Restaurant.324d0f99bdf19400a0f7.jpg",
-    "static/media/Logo.svg": "/little-lemon/static/media/Logo.6c132dfefa69396bba43f72aa595e62f.svg",
+    "main.css": "/little-lemon/static/css/main.fcda6772.css",
+    "main.js": "/little-lemon/static/js/main.d572c268.js",
+    "static/media/chefs-mario-and-adrian_a.jpg": "/little-lemon/static/media/chefs-mario-and-adrian_a.baf0d2e31dc6977f913f.jpg",
+    "static/media/chefs-mario-and-adrian_b.jpg": "/little-lemon/static/media/chefs-mario-and-adrian_b.5d8cccd399ab68c5c40b.jpg",
+    "static/media/greek-salad.jpg": "/little-lemon/static/media/greek-salad.25fc793faeb3d58ed9fb.jpg",
+    "static/media/bruschetta.jpg": "/little-lemon/static/media/bruschetta.d54e450bda5efcf06010.jpg",
+    "static/media/restaurant-food.jpg": "/little-lemon/static/media/restaurant-food.827fb0bfe6f625329f41.jpg",
+    "static/media/lemon-dessert.jpg": "/little-lemon/static/media/lemon-dessert.a146cfc0ccf8ce82fae4.jpg",
+    "static/media/logo-white.png": "/little-lemon/static/media/logo-white.d09eb2af6c5a2225eedf.png",
+    "static/media/customer1.jpg": "/little-lemon/static/media/customer1.ccdcea01362423e8e2bf.jpg",
+    "static/media/customer3.jpg": "/little-lemon/static/media/customer3.ba5a7f9f30d58ab385d9.jpg",
+    "static/media/customer4.jpg": "/little-lemon/static/media/customer4.fa4be855aa1466a1fcb3.jpg",
+    "static/media/customer2.jpg": "/little-lemon/static/media/customer2.333854849cb34643a28e.jpg",
+    "static/media/logo.png": "/little-lemon/static/media/logo.e68246686f716ff6e5d8.png",
     "index.html": "/little-lemon/index.html",
-    "main.8c611e5d.css.map": "/little-lemon/static/css/main.8c611e5d.css.map",
-    "main.1f328cec.js.map": "/little-lemon/static/js/main.1f328cec.js.map"
+    "main.fcda6772.css.map": "/little-lemon/static/css/main.fcda6772.css.map",
+    "main.d572c268.js.map": "/little-lemon/static/js/main.d572c268.js.map"
   },
   "entrypoints": [
-    "static/css/main.8c611e5d.css",
-    "static/js/main.1f328cec.js"
+    "static/css/main.fcda6772.css",
+    "static/js/main.d572c268.js"
   ]
 }
